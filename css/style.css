@@ -1,30 +1,56 @@
 header {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
 }
 header .logo {
   font-size: 24px;
 }
-header .close {
-  display: none;
-}
 header .nav {
   display: none;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background-color: #f005;
-  top: 0;
-  left: 0;
+}
+@media screen and (min-width: 768px) {
+  header .logo {
+    font-size: 36px;
+  }
+  header .hamburguer {
+    display: none;
+  }
+  header .nav {
+    display: block;
+    list-style: none;
+  }
+  header .nav__item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  header .nav__item:nth-child(5) {
+    margin-right: 0px;
+  }
+  header .nav__item a {
+    color: var(--gray);
+    text-decoration: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .nav__item {
+    margin-right: 40px;
+    font-size: 24px;
+  }
 }
 
 .hero {
-  margin-top: 48px;
-  margin-bottom: 100px;
+  margin-top: 96px;
+  margin-bottom: 200px;
 }
 .hero__wrapper {
   padding: 0 40px;
+}
+@media screen and (min-width: 1024px) {
+  .hero__wrapper {
+    padding-left: 150px;
+    width: 550px;
+  }
 }
 .hero__pretitle {
   font-size: 12px;
@@ -120,6 +146,15 @@ header .nav {
   background-color: var(--blue);
   color: var(--white);
 }
+@media screen and (min-width: 1024px) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .services .title {
+    grid-column: span 3;
+  }
+}
 
 .projects {
   display: flex;
@@ -151,12 +186,33 @@ header .nav {
   color: var(--blue);
   font-size: 18px;
 }
+@media screen and (min-width: 1024px) {
+  .projects {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(350px, 580px));
+  }
+}
+.projects .title {
+  grid-column: span 2;
+}
+.projects__item:nth-child(3), .projects__item:nth-child(5) {
+  margin-bottom: 150px;
+}
 
 .team {
   margin-bottom: 100px;
 }
+@media screen and (min-width: 1024px) {
+  .team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+}
 .team__text {
-  width: 80%;
+  width: 40%;
 }
 .team__text-span {
   color: var(--coral);
@@ -215,6 +271,12 @@ header .nav {
 .review__author-info-nick {
   color: var(--gray3);
   font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .review {
+    padding-right: 25%;
+    margin-bottom: 200px;
+  }
 }
 
 .footer {
@@ -287,6 +349,13 @@ header .nav {
   font-weight: 600;
   text-decoration: none;
 }
+@media screen and (min-width: 1024px) {
+  .footer-flex {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 120px;
+  }
+}
 
 :root {
   --font-hebbo: "Heebo", sans-serif;
@@ -318,9 +387,19 @@ body {
 .wrapper {
   margin: 12px 12px 24px 12px;
 }
+@media screen and (min-width: 768px) {
+  .wrapper {
+    margin: 42px 52px 24px 52px;
+  }
+}
 
 .title {
   font-size: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 36px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

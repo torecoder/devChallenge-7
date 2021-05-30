@@ -35,8 +35,14 @@ body {
 
 .wrapper {
   margin: 12px 12px 24px 12px;
+  @media screen and (min-width: 768px) {
+    margin: 42px 52px 24px 52px;
+  }
 }
 
 .title {
   font-size: 24px;
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+  }
 }

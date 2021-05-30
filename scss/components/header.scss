@@ -1,20 +1,42 @@
 header {
   display: flex;
   justify-content: space-between;
-  position: relative;
+  align-items: center;
   .logo {
     font-size: 24px;
   }
-  .close {
-    display: none;
-  }
   .nav {
     display: none;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: #f005;
-    top: 0;
-    left: 0;
+  }
+  @media screen and (min-width: 768px) {
+    .logo {
+      font-size: 36px;
+    }
+    .hamburguer {
+      display: none;
+    }
+    .nav {
+      display: block;
+      list-style: none;
+      &__item {
+        display: inline-block;
+        margin-right: 20px;
+        &:nth-child(5) {
+          margin-right: 0px;
+        }
+        & a {
+          color: var(--gray);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .nav {
+      &__item {
+        margin-right: 40px;
+        font-size: 24px;
+      }
+    }
   }
 }

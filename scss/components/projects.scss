@@ -29,4 +29,16 @@
     color: var(--blue);
     font-size: 18px;
   }
+  @media screen and (min-width: 1024px) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, minmax(350px, 580px));
+  }
+  .title {
+    grid-column: span 2;
+  }
+  &__item:nth-child(3),
+  &__item:nth-child(5) {
+    margin-bottom: 150px;
+  }
 }
