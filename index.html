@@ -7,89 +7,232 @@
       content="width=device-width, initial-scale=1,
   maximum-scale=5"
     />
-
-    <link rel="icon" href="devchallenges.png" />
-
+    <!-- FAVICON -->
+    <link rel="icon" href="./static/images/devchallenges.png" />
+    <!-- ICONS -->
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Edie homepage</title>
   </head>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="logo">Edie</h1>
+        <ul class="nav">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">Services</a></li>
+          <li class="nav__item"><a href="#">Our Works</a></li>
+          <li class="nav__item"><a href="#">Clients</a></li>
+          <li class="nav__item"><a href="#">Contact</a></li>
+        </ul>
+        <span class="material-icons hamburguer">menu</span>
+      </header>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__wrapper">
+            <p class="hero__pretitle">Unhappy with your website?</p>
+            <h2 class="title">
+              We create beautiful<br />
+              and fast web services
+            </h2>
+          </div>
+          <img src="./static/images/heroImage.jpg" class="hero__img" alt="" />
+          <div class="hero__wrapper">
+            <h2 class="title">
+              Story, emotion<br />
+              and purpose
+            </h2>
+            <p class="hero__text">
+              We help transform your ideas into real world applications that
+              will outperform your toughest competition and help you achieve
+              your strategic goals in short period of time.
+            </p>
+            <span class="hero__text">Want us to contact you?</span>
+            <div class="hero__contact">
+              <input
+                type="email"
+                placeholder="Email"
+                class="hero__contact-email"
+              />
+              <input type="submit" value="Join" class="hero__contact-btn" />
+            </div>
+          </div>
+        </section>
+        <section class="services">
+          <h2 class="title">We offer high<br />demand services</h2>
+          <div class="card">
+            <span class="material-icons card__icon">edit</span>
+            <h3 class="card__title">UI/UX Design</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="card__btn">Get started</button>
+          </div>
+          <div class="card">
+            <span class="material-icons card__icon green"> code </span>
+            <h3 class="card__title">Front End</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="card__btn">Get started</button>
+          </div>
+          <div class="card">
+            <span class="material-icons card__icon coral"> dns </span>
+            <h3 class="card__title">Back End</h3>
+            <p class="card__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a
+              metus ac nulla consequat aliquet id quis turpis.
+            </p>
+            <button class="card__btn">Get started</button>
+          </div>
+        </section>
+        <section class="projects">
+          <h2 class="title">
+            Good design means<br />
+            good business
+          </h2>
+          <div class="projects__item">
+            <img
+              src="./static/images/smarthome.jpg"
+              alt=""
+              class="projects__item-img"
+            />
+            <span class="projects__item-span">Full stack application</span>
+            <h4 class="projects__item-title">Smart home dashboard</h4>
+          </div>
+          <div class="projects__item">
+            <img
+              src="./static/images/onboard.png"
+              alt=""
+              class="projects__item-img"
+            />
+            <span class="projects__item-span">UX/UI design</span>
+            <h4 class="projects__item-title">Onboard application</h4>
+          </div>
+          <div class="projects__item">
+            <img
+              src="./static/images/booking.png"
+              alt=""
+              class="projects__item-img"
+            />
+            <span class="projects__item-span">Mobile application</span>
+            <h4 class="projects__item-title">Booking system</h4>
+          </div>
+          <div class="projects__item">
+            <img
+              src="./static/images/juice-product.png"
+              alt=""
+              class="projects__item-img-rote"
+            />
+            <span class="projects__item-span">Front End applicati on</span>
+            <h4 class="projects__item-title">Juice product homepage</h4>
+          </div>
+          <span class="projects__more">see more →</span>
+        </section>
+        <section class="team">
+          <div class="team__text">
+            <span class="team__text-span">Meet the team</span>
+            <h2 class="title">We are chilled and a laidback team</h2>
+            <p class="team__text-lorem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="team__grid">
+            <img
+              src="./static/images/person1.png"
+              alt="person"
+              class="team__grid-item"
+            />
+            <img
+              src="./static/images/person2.png"
+              alt="person"
+              class="team__grid-item"
+            />
+            <img
+              src="./static/images/person3.png"
+              alt="person"
+              class="team__grid-item"
+            />
+          </div>
+        </section>
+        <section class="review">
+          <blockquote class="review__quote">
+            “Fast and outstanding resutls. Edie understands their customer’s
+            needs. They have a young and talented team.”
+          </blockquote>
+          <div class="review__author">
+            <img
+              src="./static/images/person4.png"
+              alt="person"
+              class="review__author-img"
+            />
+            <div class="review__author-info">
+              <cite class="review__author-info-name">Carlos Tran</cite>
+              <p class="review__author-info-nick">The Decorate Gatsby</p>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
+    <footer class="footer">
+      <div class="footer-flex">
+        <ul class="footer__nav">
+          <li class="footer__nav-item"><a href="#">Home</a></li>
+          <li class="footer__nav-item"><a href="#">Services</a></li>
+          <li class="footer__nav-item"><a href="#">Our Works</a></li>
+          <li class="footer__nav-item"><a href="#">Clients</a></li>
+          <li class="footer__nav-item"><a href="#">Contact</a></li>
+        </ul>
+        <div class="footer__social">
+          <h3 class="footer__social-logo">Edie</h3>
+          <img
+            src="./static/svg/instagram.svg"
+            alt="Instagram"
+            class="footer__social-link"
+          />
+          <img
+            src="./static/svg/linkedin.svg"
+            alt="LinkedIn"
+            class="footer__social-link"
+          />
+          <img
+            src="./static/svg/twitter.svg"
+            alt="Twitter"
+            class="footer__social-link"
+          />
+        </div>
+        <div class="footer__form">
+          <span class="footer__form-span">Want us to contact you?</span>
+          <div class="footer__form-contact">
+            <input
+              type="email"
+              placeholder="Email"
+              class="footer__form-contact-email"
+            />
+            <input
+              type="submit"
+              value="Join"
+              class="footer__form-contact-btn"
+            />
+          </div>
+        </div>
+      </div>
+      <p class="footer-author">
+        created by <a href="https://github.com/torecoder">@torecoder</a> -
+        devChallenges.io
+      </p>
+    </footer>
   </body>
 </html>

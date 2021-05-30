@@ -1,0 +1,42 @@
+@import "./components/header.scss";
+@import "./components/hero.scss";
+@import "./components/services.scss";
+@import "./components/projects.scss";
+@import "./components/team.scss";
+@import "./components/review.scss";
+@import "./components/footer.scss";
+
+:root {
+  --font-hebbo: "Heebo", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --gray: #333333;
+  --gray2: #4f4f4f;
+  --gray3: #828282;
+  --gray4: #bdbdbd;
+  --gray6: #f2f2f2;
+  --white: #ffffff;
+  --dirty-white: #e0e0e0;
+  --blue: #2d9cdb;
+  --green: #27ae60;
+  --coral: #eb5757;
+  --purple: #100e1d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--gray);
+  font-weight: 500;
+  font-family: var(--font-poppins);
+}
+
+.wrapper {
+  margin: 12px 12px 24px 12px;
+}
+
+.title {
+  font-size: 24px;
+}

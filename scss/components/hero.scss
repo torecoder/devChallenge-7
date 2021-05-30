@@ -1,0 +1,49 @@
+.hero {
+  margin-top: 48px;
+  margin-bottom: 100px;
+  &__wrapper {
+    padding: 0 40px;
+  }
+  &__pretitle {
+    font-size: 12px;
+    color: var(--blue);
+  }
+  &__img {
+    width: 100%;
+    border-radius: 18px;
+    margin: 15px 0;
+  }
+  &__text {
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--gray);
+    margin: 30px 0;
+  }
+  &__span {
+    font-size: 10px;
+    color: var(--gray3);
+  }
+  &__contact {
+    border-radius: 12px;
+    display: flex;
+    input {
+      border-radius: 12px;
+      border: none;
+      outline: none;
+    }
+    &-email {
+      margin-left: 20px;
+      flex: 1;
+      color: var(--gray);
+      background: var(--gray6);
+      &::placeholder {
+        color: var(--gray4);
+      }
+    }
+    &-btn {
+      padding: 11px 21px;
+      background: var(--blue);
+      color: var(--white);
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.review {
+  margin-bottom: 100px;
+  &__quote {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  &__author {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &-img {
+      transform: rotate(90deg);
+      width: 70px;
+      border-radius: 12px;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-name {
+        font-size: 24px;
+        font-style: normal;
+      }
+      &-nick {
+        color: var(--gray3);
+        font-size: 18px;
+      }
+    }
+  }
+}

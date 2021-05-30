@@ -1,0 +1,72 @@
+.footer {
+  background-color: var(--purple);
+  padding: 36px 44px 24px 44px;
+  color: var(--white);
+  &-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 64px;
+  }
+  &__nav {
+    list-style: none;
+    &-item a {
+      text-decoration: none;
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  &__social {
+    &-logo {
+      font-size: 36px;
+      font-weight: 800;
+      font-family: var(--font-hebbo);
+    }
+    &-link {
+      margin-right: 10px;
+    }
+  }
+  &__form {
+    margin-bottom: 100px;
+    &-span {
+      font-size: 10px;
+      color: var(--gray3);
+    }
+    &-contact {
+      border-radius: 12px;
+      display: flex;
+      background-color: var(--white);
+      input {
+        border-radius: 12px;
+        border: none;
+        outline: none;
+      }
+      &-email {
+        margin-left: 20px;
+        flex: 1;
+        color: var(--gray);
+        background: var(--gray6);
+        &::placeholder {
+          color: var(--gray4);
+        }
+      }
+      &-btn {
+        padding: 11px 21px;
+        margin: 4px;
+        background: var(--blue);
+        color: var(--white);
+      }
+    }
+  }
+  &-author {
+    text-align: center;
+    font-size: 14px;
+    color: var(--gray6);
+    & a {
+      color: var(--gray6);
+      font-weight: 600;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.team {
+  margin-bottom: 100px;
+  &__text {
+    width: 80%;
+    &-span {
+      color: var(--coral);
+      font-size: 18px;
+    }
+    .title {
+      font-size: 36px;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 10px;
+    &-item {
+      width: 100%;
+      transform: rotate(90deg);
+      border-radius: 24px;
+    }
+    &-item:nth-child(1) {
+      width: 90%;
+      grid-column: 2 / 3;
+    }
+    &-item:nth-last-child(1) {
+      transform: rotate(0deg);
+      grid-column: span 1;
+      grid-row: 1 / 3;
+    }
+  }
+}
